@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <ProgressBar
+        android:id="@+id/progressBar_leaderboard"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:progressDrawable="@drawable/custom_progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/leaderboard_rank"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/rank"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="@color/black"/>
+
+        <ImageView
+            android:id="@+id/imageView_user"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/logo"/>
+
+        <TextView
+            android:id="@+id/leaderboard_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/name"
+            android:gravity="center"
+            android:layout_weight="6"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/leaderboard_steps"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/steps"
+            android:gravity="center"
+            android:layout_weight="2"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+</RelativeLayout>

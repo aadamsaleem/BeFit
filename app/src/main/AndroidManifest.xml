@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.aadam.befit">
+
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+
+    <receiver android:name="com.example.alarmmanagernotifcation.AlarmReceiver" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".uiModules.LoggedOut.LoginActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/FullscreenTheme"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".uiModules.LoggedOut.SignUpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".uiModules.LoggedOut.SignInActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".uiModules.LoggedOut.DetailActivity"
+            android:screenOrientation="portrait" />
+
+        <receiver android:name=".services.ReminderService" />
+
+        <activity
+            android:name=".uiModules.LoggedIn.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="44f6c97563a00a8c637314ff60692f6e9862fb00" />
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+</manifest>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/topView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    android:orientation="vertical"
+    tools:context="com.aadam.befit.uiModules.LoggedOut.SignInActivity">
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/delete_icon"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+    <!-- Content View-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@color/transparent"
+        android:orientation="vertical">
+
+        <!-- Title-->
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="50dp"
+            android:text="@string/signIn_text"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <!-- Email-->
+        <EditText
+            android:id="@+id/edittext_email"
+            style="@style/CustomTextField"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress" />
+
+        <!-- Password-->
+        <EditText
+            android:id="@+id/editText_password"
+            style="@style/CustomTextField"
+            android:hint="@string/password"
+            android:inputType="textPassword" />
+
+        <!-- Sign Up-->
+        <TextView
+            android:id="@+id/signInAction"
+            style="@style/CustomButton"
+            android:layout_marginTop="10dp"
+            android:onClick="onClick"
+            android:text="@string/signIn_text" />
+
+        <!-- Alert-->
+        <TextView
+            android:id="@+id/alert"
+            style="@style/AlertTextView"
+            android:alpha="0"
+            android:text="@string/alert" />
+
+    </LinearLayout>
+
+</FrameLayout>
+

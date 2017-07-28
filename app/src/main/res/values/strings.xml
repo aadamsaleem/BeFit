@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Be Fit</string>
+
+    <string name="alert">Alert</string>
+
+    <!--Login Activity-->
+    <string name="text_splashscreen">TRACK YOUR FITNESS</string>
+    <string name="button_twitter_login">LOGIN WITH TWITTER</string>
+    <string name="textView_sign_up">SIGN UP</string>
+    <string name="textView_login">LOGIN WITH YOUR ACCOUNT</string>
+
+    <!-- SignUp Activity-->
+    <string name="signUp_text">SIGN UP</string>
+    <string name="email">EMAIL</string>
+    <string name="password">PASSWORD</string>
+    <string name="confirm_password">CONFIRM PASSWORD</string>
+
+    <!-- Username Activity-->
+    <string name="username">USERNAME</string>
+    <string name="continue_text">CONTINUE</string>
+
+    <!-- SignIn Activity-->
+    <string name="signIn_text">SIGN IN</string>
+    <string name="heightTextView">Height in cm</string>
+    <string name="full_name">FULL NAME</string>
+    <string name="height">HEIGHT</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <!--Main Activity-->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="today_s_statistics">TODAY\'S STATISTICS</string>
+
+    <!--Leaderboard Fragment-->
+    <string name="steps">STEPS</string>
+    <string name="name">NAME</string>
+    <string name="rank">RANK</string>
+    <string name="leaderboard">LEADERBOARD</string>
+
+    <!--Session Fragment-->
+    <string name="time">TIME</string>
+    <string name="time_0">0:00:000</string>
+    <string name="_0">0</string>
+    <string name="distance">DISTANCE</string>
+    <string name="_0_miles">0 miles</string>
+    <string name="start_session">START SESSION</string>
+    <string name="user_email">user@email.com</string>
+
+</resources>
